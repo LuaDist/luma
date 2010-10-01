@@ -1,0 +1,15 @@
+--- This file is part of LuaDist project
+
+name = "luma"
+version = "0.1"
+
+desc = "Luma is a macro system for Lua that allows you to define macros with arbitrary syntax, but clearly delimited when surrounded by Lua code. Luma is inspired by Scheme's syntax-rules/syntax duo, and uses Lpeg for grammars and Cosmo for templates."
+author = "Fabio Mascarenhas"
+license = "MIT/X11"
+url = "http://luma.luaforge.net"
+maintainer = "Peter Drahoš"
+
+depends = {
+	"lua ~> 5.1",
+	"lpeg >= 0.7"
+}
