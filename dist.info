@@ -1,0 +1,78 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Fabio Mascarenhas"
+depends = {
+[[lua ~> 5.1]],
+[[lpeg >= 0.7]],
+}
+
+desc = "Luma is a macro system for Lua that allows you to define macros with arbitrary syntax, but clearly delimited when surrounded by Lua code. Luma is inspired by Scheme's syntax-rules/syntax duo, and uses Lpeg for grammars and Cosmo for templates."
+version = "0.1"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[lib/lua/luma.lua]],
+[[lib/lua/luma/re.lua]],
+[[lib/lua/luma/cosmo.lua]],
+[[bin/expand]],
+[[bin/luma]],
+}
+,
+Documentation = {
+[[share/luma/doc//index.md]],
+[[share/luma/doc//luma.png]],
+[[share/luma/doc//makedoc.lua]],
+[[share/luma/doc//manual.md]],
+[[share/luma/doc//license.html]],
+[[share/luma/doc//manual.html]],
+[[share/luma/doc//license.md]],
+[[share/luma/doc//doc.css]],
+[[share/luma/doc//index.html]],
+}
+,
+Test = {
+[[share/luma/test//mat.lua]],
+[[share/luma/test//exception.lua]],
+[[share/luma/test//using.lua]],
+[[share/luma/test//nor.lua]],
+[[share/luma/test//inc.lua]],
+[[share/luma/test//test.lua]],
+[[share/luma/test//aut.lua]],
+[[share/luma/test//power.lua]],
+[[share/luma/test//automaton.lua]],
+[[share/luma/test//use.lua]],
+[[share/luma/test//trycatch.lua]],
+[[share/luma/test//match.lua]],
+}
+,
+Example = {
+[[share/luma/example//mat.lua]],
+[[share/luma/example//obj.lua]],
+[[share/luma/example//exception.lua]],
+[[share/luma/example//using.lua]],
+[[share/luma/example//nor.lua]],
+[[share/luma/example//inc.lua]],
+[[share/luma/example//class.lua]],
+[[share/luma/example//list.lua]],
+[[share/luma/example//aut.lua]],
+[[share/luma/example//foo.lua]],
+[[share/luma/example//object.lua]],
+[[share/luma/example//power.lua]],
+[[share/luma/example//block_func.lua]],
+[[share/luma/example//automaton.lua]],
+[[share/luma/example//block.lua]],
+[[share/luma/example//orbit_app.lua]],
+[[share/luma/example//fact.lua]],
+[[share/luma/example//use.lua]],
+[[share/luma/example//orbit_dsl.lua]],
+[[share/luma/example//bar.lua]],
+[[share/luma/example//trycatch.lua]],
+[[share/luma/example//match.lua]],
+[[share/luma/example//listcomp.lua]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "luma"
+url = "http://luma.luaforge.net"
